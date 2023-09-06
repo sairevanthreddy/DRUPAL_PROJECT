@@ -23,3 +23,4 @@ jobs:
           ssh -vvv -o StrictHostKeyChecking=no root@52.70.109.97 "mkdir -p /var/www/html"
           ssh -vvv -o StrictHostKeyChecking=no root@52.70.109.97 "cd /var/www/html && rm -rf * && git init && git clone https://github.com/sairevanthreddy/drupal.git"
           ssh -vvv -o StrictHostKeyChecking=no root@52.70.109.97 "cp /var/settings.php /var/www/html/drupal/sites/default"
+          ssh -vvv -o StrictHostKeyChecking=no root@52.70.109.97 "cd /var/www/html/drupal && chmod +x dp.sh && ./dp.sh"
